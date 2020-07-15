@@ -1,0 +1,7 @@
+<launch>
+
+	<node pkg ="usb_cam" type="usb_cam_node" name="web_cam" output="screen"/>
+	<node pkg="opencv" type="webcam.py" name="web_cam_node" output="screen"/>
+	<arg name="rgb_topic" value="/camera/color/image_raw"/>
+
+</launch>
